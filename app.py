@@ -13,7 +13,7 @@ def home():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-
+ try:
     Gender = int(request.form["Gender"])
     Married = int(request.form["Married"])
     Dependents = int(request.form["Dependents"])
