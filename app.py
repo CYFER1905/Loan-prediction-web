@@ -52,3 +52,13 @@ def predict():
         result = "❌ Loan Rejected"
 
     return render_template("index.html", prediction=result)
+    
+    except Exception as e:
+        return render_template(
+            "index.html",
+            prediction="Error: " + str(e)
+        )
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host="127.0.0.1", port=5000)
