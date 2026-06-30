@@ -23,9 +23,9 @@ def predict():
      CoapplicantIncome = float(request.form["CoapplicantIncome"])
      LoanAmount = float(request.form["LoanAmount"])
      Loan_Amount_Term = float(request.form["Loan_Amount_Term"])
-    Credit_History = float(request.form["Credit_History"])
-    Property_Area = int(request.form["Property_Area"])
-    features = np.array([[
+     Credit_History = float(request.form["Credit_History"])
+     Property_Area = int(request.form["Property_Area"])
+     features = np.array([[
 
         Gender,
         Married,
